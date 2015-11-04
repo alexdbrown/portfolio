@@ -132,6 +132,26 @@
   </div>
 </header>
 
+  <div class="sidebars">
+    <div class="row">
+      <div class="col-lg-4">
+        <?php if ($page['sidebar_left']): ?>
+          <aside class="sidebar_left">
+            <?php print render($page['sidebar_left']); ?>
+          </aside>
+        <?php endif; ?>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-lg-4 col-lg-offset-9">
+        <?php if ($page['sidebar_right']): ?>
+          <aside class="sidebar_right">
+            <?php print render($page['sidebar_right']); ?>
+          </aside>
+        <?php endif; ?>
+      </div>
+      </div>
+    </div>
 <!-- Post Content -->
 <article>
   <div class="container">
@@ -148,24 +168,6 @@
       </div>
     </div>
   </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <?php if ($page['sidebar_left']): ?>
-          <aside class="sidebar_left">
-            <?php print render($page['sidebar_left']); ?>
-          </aside>
-        <?php endif; ?>
-      </div>
-      <div class="row">
-      <div class="col-lg-4 col-lg-offset-9">
-        <?php if ($page['sidebar_right']): ?>
-          <aside class="sidebar_right">
-            <?php print render($page['sidebar_right']); ?>
-          </aside>
-        <?php endif; ?>
-      </div>
-      </div>
-    </div>
 </article>
 
 <hr>
