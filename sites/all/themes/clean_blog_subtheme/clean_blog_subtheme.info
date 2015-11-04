@@ -2,5 +2,5 @@ name = Clean Blog Subtheme
 description = A subtheme of Bootstrap Clean Blog (sub theme).
 package = Alex's Subthemes
 core = 7.x
-dependencies[] = bootstrap_clean_blog
-stylesheets[all][] = style.css
+base theme = bootstrap_clean_blog
+stylesheets[all][] = scss/styles.css
