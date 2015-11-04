@@ -1,5 +1,14 @@
 .intro-header {
   background-color: #5A0909;
-  color: black; }
+  color: #403F4C; }
+
+.field-content a {
+  text-transform: uppercase; }
+
+td {
+  padding: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  position: static; }
 
 /*# sourceMappingURL=styles.css.map */

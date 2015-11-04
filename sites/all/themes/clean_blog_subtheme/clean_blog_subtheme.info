@@ -11,3 +11,5 @@ regions[content] = 'Content'
 regions[footer] = 'Footer primary'
 regions[sidebar_right] = 'Right Sidebar'
 regions[sidebar_left] = 'Left Sidebar'
+
+scripts[] = js/scripts.js
