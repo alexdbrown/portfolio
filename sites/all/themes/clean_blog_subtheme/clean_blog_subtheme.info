@@ -4,3 +4,10 @@ package = Alex's Subthemes
 core = 7.x
 base theme = bootstrap_clean_blog
 stylesheets[all][] = scss/styles.css
+
+
+regions[help] = 'Help'
+regions[content] = 'Content'
+regions[footer] = 'Footer primary'
+regions[sidebar_right] = 'Right Sidebar'
+regions[sidebar_left] = 'Left Sidebar'
