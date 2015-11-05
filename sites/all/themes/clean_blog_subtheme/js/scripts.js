@@ -20,45 +20,51 @@ Drupal.behaviors.my_custom_behavior = {
 
     // Change image on mouseover to be coolest cooler
     // Save old image src outside handler scope so we can set it back
-    var oldImgSrc;
-    $("td.col-1 img")
+
+    //hog heave
+    var oldImgSrc1;
+    $("td.col-1.col-first img")
       .mouseover(function() {
-        oldImgSrc = $(this).attr('src');
+        oldImgSrc1 = $(this).attr('src');
         $(this).attr('src', 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png');
       })
       .mouseleave(function() {
-        $(this).attr('src', oldImgSrc);
+        $(this).attr('src', oldImgSrc1);
       })
 
-    $("td.col-2 img")
+    //ADA
+    var oldImgSrc2;
+    $("td.col-2.col-first img")
       .mouseover(function() {
-        oldImgSrc = $(this).attr('src');
-        $(this).attr('src', 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png');
+        oldImgSrc2 = $(this).attr('src');
+        $(this).attr('src', "https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png");
       })
       .mouseleave(function() {
-        $(this).attr('src', oldImgSrc);
+        $(this).attr('src', oldImgSrc2);
       })
 
 
-    var oldImgSrc;
-    $("td.col-3 img")
+    //tap that
+    var oldImgSrc3;
+    $("td.row-2 col-1 img")
       .mouseover(function() {
-        oldImgSrc = $(this).attr('src');
-        $(this).attr('src', "http://icons.iconarchive.com/icons/icons8/windows-8/512/Programming-Php-icon.png");
+        oldImgSrc3 = $(this).attr('src');
+        $(this).attr('src', 'http://icons.iconarchive.com/icons/icons8/windows-8/512/Programming-Php-icon.png');
       })
       .mouseleave(function() {
-        $(this).attr('src', oldImgSrc);
+        $(this).attr('src', oldImgSrc3);
       })
 
 
-    var oldImgSrc;
-    $("td.col-4 img")
+    //sign in
+    var oldImgSrc4;
+    $("td.col-2.col-last img")
       .mouseover(function() {
-        oldImgSrc = $(this).attr('src');
-        $(this).attr('src', 'http://jlstrater.github.io/No-Nonsense-NoSQL/assets/img/java-thumb.png');
+        oldImgSrc4 = $(this).attr('src');
+        $(this).attr('src', 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png');
       })
       .mouseleave(function() {
-        $(this).attr('src', oldImgSrc);
+        $(this).attr('src', oldImgSrc4);
       })
 
 

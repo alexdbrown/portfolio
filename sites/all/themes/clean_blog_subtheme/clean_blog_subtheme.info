@@ -13,3 +13,9 @@ regions[sidebar_right] = 'Right Sidebar'
 regions[sidebar_left] = 'Left Sidebar'
 
 scripts[] = js/scripts.js
+
+; Social links
+; --------------
+settings[social_twitter] = 'https://www.twitter.com/abrown88'
+settings[social_linkedin] = 'https://www.linkedin.com/in/alexdbrown'
+settings[social_github] = 'https://github.com/alexdbrown'

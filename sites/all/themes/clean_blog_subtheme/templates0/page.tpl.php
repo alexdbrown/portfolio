@@ -103,20 +103,21 @@
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header">
+<header class="intro-header"
+        style="background-image: url('<?php print $header_image; ?>')">
   <div class="container">
     <div class="row">
       <?php if (isset($node)): ?>
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="post-heading">
-            <!-- <h1><?php print $title; ?></h1> -->
-            <!-- <span class="meta"><?php print $submitted; ?></span> -->
+            <h1><?php print $title; ?></h1>
+            <span class="meta"><?php print $submitted; ?></span>
           </div>
         </div>
       <?php else: ?>
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="site-heading">
-            <h1>Alexandra Brown</h1>
+            <h1><?php print $title ? $title : $site_name; ?></h1>
             <?php if (!$title): ?>
               <hr class="small">
               <span class="subheading">
@@ -132,26 +133,6 @@
   </div>
 </header>
 
-  <div class="sidebars">
-    <div class="row">
-      <div class="col-lg-4">
-        <?php if ($page['sidebar_left']): ?>
-          <aside class="sidebar_left">
-            <?php print render($page['sidebar_left']); ?>
-          </aside>
-        <?php endif; ?>
-      </div>
-    </div>
-      <div class="row">
-      <div class="col-lg-4 col-lg-offset-9">
-        <?php if ($page['sidebar_right']): ?>
-          <aside class="sidebar_right">
-            <?php print render($page['sidebar_right']); ?>
-          </aside>
-        <?php endif; ?>
-      </div>
-      </div>
-    </div>
 <!-- Post Content -->
 <article>
   <div class="container">
@@ -180,19 +161,19 @@
         <ul class="list-inline text-center">
           <li>
             <a target="_blank"
-               href="<?php print theme_get_setting('social_linkedin'); ?>">
+               href="<?php print theme_get_setting('social_twitter'); ?>">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
           <li>
             <a target="_blank"
-               href="<?php print theme_get_setting('social_twitter'); ?>">
+               href="<?php print theme_get_setting('social_facebook'); ?>">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
