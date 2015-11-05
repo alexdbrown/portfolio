@@ -1,14 +1,15 @@
 .intro-header {
   background-color: #5A0909;
-  color: #403F4C; }
+  color: #403F4C;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .field-content a {
   text-transform: uppercase; }
 
 td {
+  margin-left: -60;
   padding: 50px;
   font-family: sans-serif;
-  text-align: center;
-  position: static; }
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

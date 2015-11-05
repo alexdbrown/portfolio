@@ -109,8 +109,8 @@
       <?php if (isset($node)): ?>
         <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
           <div class="post-heading">
-            <h1><?php print $title; ?></h1>
-            <span class="meta"><?php print $submitted; ?></span>
+            <!-- <h1><?php print $title; ?></h1> -->
+            <!-- <span class="meta"><?php print $submitted; ?></span> -->
           </div>
         </div>
       <?php else: ?>

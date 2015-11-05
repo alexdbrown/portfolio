@@ -30,8 +30,18 @@ Drupal.behaviors.my_custom_behavior = {
         $(this).attr('src', oldImgSrc);
       })
 
-    var oldImgSrc;
     $("td.col-2 img")
+      .mouseover(function() {
+        oldImgSrc = $(this).attr('src');
+        $(this).attr('src', 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png');
+      })
+      .mouseleave(function() {
+        $(this).attr('src', oldImgSrc);
+      })
+
+
+    var oldImgSrc;
+    $("td.col-3 img")
       .mouseover(function() {
         oldImgSrc = $(this).attr('src');
         $(this).attr('src', "http://icons.iconarchive.com/icons/icons8/windows-8/512/Programming-Php-icon.png");
@@ -42,7 +52,7 @@ Drupal.behaviors.my_custom_behavior = {
 
 
     var oldImgSrc;
-    $("td.col-3 img")
+    $("td.col-4 img")
       .mouseover(function() {
         oldImgSrc = $(this).attr('src');
         $(this).attr('src', 'http://jlstrater.github.io/No-Nonsense-NoSQL/assets/img/java-thumb.png');
