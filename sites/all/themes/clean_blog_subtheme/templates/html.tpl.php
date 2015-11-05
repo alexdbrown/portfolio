@@ -46,6 +46,8 @@
 ?><!DOCTYPE html>
 <html lang="<?php print $language->language; ?>">
 <head profile="<?php print $grddl_profile; ?>">
+  <link href='https://fonts.googleapis.com/css?family=Francois+One|Palanquin:100|Raleway:400,600,100|Philosopher|Belleza' rel='stylesheet' type='text/css'>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Francois+One|Palanquin:1|Raleway:100' rel='stylesheet' type='text/css'> -->
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>

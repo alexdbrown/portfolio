@@ -23,7 +23,7 @@ Drupal.behaviors.my_custom_behavior = {
 
     //hog heave
     var oldImgSrc1;
-    $("td.col-1.col-first img")
+    $("tr.row-1 td.col-1 img")
       .mouseover(function() {
         oldImgSrc1 = $(this).attr('src');
         $(this).attr('src', 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png');
@@ -32,24 +32,24 @@ Drupal.behaviors.my_custom_behavior = {
         $(this).attr('src', oldImgSrc1);
       })
 
-    //ADA
+    //tap That
     var oldImgSrc2;
-    $("td.col-2.col-first img")
+    $("tr.row-1 td.col-2 img")
       .mouseover(function() {
         oldImgSrc2 = $(this).attr('src');
-        $(this).attr('src', "https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png");
+        $(this).attr('src', "http://icons.iconarchive.com/icons/icons8/windows-8/512/Programming-Php-icon.png");
       })
       .mouseleave(function() {
         $(this).attr('src', oldImgSrc2);
       })
 
 
-    //tap that
+    //ada
     var oldImgSrc3;
-    $("td.row-2 col-1 img")
+    $("tr.row-2 td.col-1 img")
       .mouseover(function() {
         oldImgSrc3 = $(this).attr('src');
-        $(this).attr('src', 'http://icons.iconarchive.com/icons/icons8/windows-8/512/Programming-Php-icon.png');
+        $(this).attr('src', 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png');
       })
       .mouseleave(function() {
         $(this).attr('src', oldImgSrc3);
@@ -58,7 +58,7 @@ Drupal.behaviors.my_custom_behavior = {
 
     //sign in
     var oldImgSrc4;
-    $("td.col-2.col-last img")
+    $("tr.row-2 td.col-2 img")
       .mouseover(function() {
         oldImgSrc4 = $(this).attr('src');
         $(this).attr('src', 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png');

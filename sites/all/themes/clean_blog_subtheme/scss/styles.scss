@@ -1,5 +1,6 @@
 body {
-  // background-color: black;
+  // background: url(/../../../background.jpg) center;
+
 }
 
 .intro-header {
@@ -10,16 +11,32 @@ body {
 
 }
 
+.navbar-right {
+  // font-family: 'Raleway';
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #414047;
+}
+
+.homepage h1 {
+  // color: #998888;
+  // font-family: 'Raleway';
+  font-size: 400px;
+  margin-top: 100px;
+}
 
 .field-content a {
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
 }
 
 td {
   margin-left: -60;
-  padding: 50px;
-  font-family: sans-serif;
+  padding: 60px;
+  font-family: 'Palanquin';
+  // font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
   text-align: center;
+  color: #585760;
   // position: static;
 }
